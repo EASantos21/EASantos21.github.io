@@ -9,13 +9,15 @@ function moveSlides(n, slideName) {
 
 function showSlides(n, slideName) {
     var i;
+    //Getting the array of slides for the gallery
     var slides = document.getElementsByClassName(slideName);
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
+    //Once the current index exceeds the length, we restart
     if (n > slides.length) { index = 1 }
-    if (n < 1) { index = slides.length }
+
+    //Iterating through all slides to hide them
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
+    //Current Index - 1 since we start at 1, we display it
     slides[index - 1].style.display = "block";
 }
