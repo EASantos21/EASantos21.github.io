@@ -1,7 +1,7 @@
 //Code used to set all slide shows on web pages
 var index = 1;
 showSlides(index, "friends-slides");
-
+showSlides(index, "family-slides");
 // Next/previous controls
 function moveSlides(n, slideName) {
     showSlides(index += n, slideName);
